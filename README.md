@@ -53,23 +53,6 @@ python main.py
 
 По умолчанию скрипт запускает все запросы и берёт базу `car_dealership.db` из той же папки.
 
-Можно запустить один конкретный запрос:
-
-```bash
-python main.py --query top_sellers
-```
-
-Или указать путь к базе:
-
-```bash
-python main.py --db car_dealership.db --query revenue_by_brand
-```
-
-Показать все строки без ограничения:
-
-```bash
-python main.py --max-rows 0
-```
 
 ## Доступные запросы в `main.py`
 
@@ -82,12 +65,3 @@ python main.py --max-rows 0
 | `top_sellers` | рейтинг продавцов |
 | `data_quality_checks` | простая проверка связности данных |
 
-## Что показывает проект
-
-Этот проект демонстрирует базовые навыки, которые полезны для junior data analyst:
-
-- проектирование простой реляционной модели;
-- работа с первичными и внешними ключами;
-- написание SQL-запросов с `JOIN`, `GROUP BY`, `COUNT`, `SUM`, `AVG`;
-- запуск SQL из Python через `sqlite3`;
-- оформление проекта для GitHub.
